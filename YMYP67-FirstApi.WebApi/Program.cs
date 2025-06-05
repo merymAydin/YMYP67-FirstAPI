@@ -1,8 +1,9 @@
 
 using YMYP67_FirstAPI.DataAccess.Concrete.EntityFramework;
 
-namespace YMYP67_FirstApi.WebApi
-{
+
+namespace YMYP67_FirsAPI.WebApi;
+
     public class Program
     {
         public static void Main(string[] args)
