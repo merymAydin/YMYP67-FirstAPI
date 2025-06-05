@@ -12,9 +12,12 @@ namespace YMYP67_FirstAPI.DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString: @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Ymyp67FirstApi;Integrated Security=True;Trust Server Certificate=Trust;");
+            optionsBuilder.UseSqlServer(connectionString: @"Data Source=LAPTOP-HLA9L30F\SQLEXPRESS;Initial Catalog=FirstAPIDb;Integrated Security=True;Trust Server Certificate=True");
         }
         public DbSet <Category> Categories { get; set; } 
         public DbSet <Product> Products { get; set; }
+        public DbSet<Person> Persons { get; set; }
+        public DbSet<Customer> Customers { get; set; } 
+        
     }
 }
